@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { UserLock, Shield, ArrowRight } from "lucide-react";
+import { Lock, Shield, ArrowRight } from "lucide-react";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -24,7 +24,7 @@ export default function LoginPage() {
       <div className="p-8 rounded-3xl bg-luxury-slate/80 border border-luxury-gold/40 shadow-2xl space-y-6">
         <div className="text-center space-y-2">
           <div className="w-12 h-12 rounded-2xl bg-luxury-gold/20 flex items-center justify-center text-luxury-gold mx-auto">
-            {role === "admin" ? <Shield className="w-6 h-6" /> : <UserLock className="w-6 h-6" />}
+            {role === "admin" ? <Shield className="w-6 h-6" /> : <Lock className="w-6 h-6" />}
           </div>
           <h1 className="text-2xl font-bold text-white">
             {role === "admin" ? "Admin Management Portal" : "Student Learning Portal"}
